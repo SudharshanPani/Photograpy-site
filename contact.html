@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online form</title>
+    <link rel="stylesheet" href="./ruchi.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <section>
+        <h1>Sudharshan Photography Online Booking Form</h1>
+        <p>Fill the following details for a quote</p>
+        <form>
+          <fieldset>
+            <legend>Your Contact information</legend>
+            <label for="name" id="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="firstname+lastname"
+            />
+            <label for="phone">Phone Number</label>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="Use state pin"
+            />
+            <label for="email">Email id</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Use valid email"
+            />
+          </fieldset>
+          <fieldset>
+            <legend>About your shoot details</legend>
+            <label for="date">Requested Date</label>
+            <input type="date" />
+            <label for="qty">How many people are attending</label>
+            <input type="number" name="qty" id="qty" min="1" max="10" />
+            <p>which shoot are you looking for</p>
+            <ul>
+              <label>
+                <input type="radio" name="stream" value="sslc" />Potrait
+                Photography
+              </label>
+              <label>
+                <input type="radio" name="stream" value="PUC" />Wedding
+                Photography
+              </label>
+              <label>
+                <input type="radio" name="stream" value="Eng" />Birthday's shoot
+              </label>
+              <label>
+                <input type="radio" name="stream" value="Bca" />Baby shower
+                shoot
+              </label>
+              <label>
+                <input type="radio" name="stream" value="MBBS" />Family outdoor
+                Shoot
+              </label>
+            </ul>
+
+            <label for="subjects"> which package you are looking for</label>
+
+            <select id="subjects">
+              <option>Choose one..</option>
+              <option>Candid and videography</option>
+              <option>Candid and potraits</option>
+              <option>Candid, potraits and drone shots</option>
+            </select>
+
+            <label for="comments"> special requests</label>
+            <textarea
+              name="comments"
+              id="comments"
+              cols="30"
+              rows="10"
+              placeholder="Feel free to ask your queries"
+            ></textarea>
+
+            <label>
+              <input type="checkbox" name="subcription" id="subcription" />
+              Add me for notification
+            </label>
+
+            <button type="button">Submit</button>
+          </fieldset>
+        </form>
+      </section>
+      <aside>
+        <h3>Address</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.161886489901!2d77.44340311490008!3d13.088924690779056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae29f67e47ce13%3A0x12b860bb9ff9866f!2sThe%20Golden%20Palms%20Hotel%20%26%20Spa!5e0!3m2!1sen!2sin!4v1594891080036!5m2!1sen!2sin"
+          width="350"
+          height="200"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+        <address>
+          Golden palms Resort<br />
+          Tumkur Road <br />
+          Bangalore
+        </address>
+        <h2>Scan the QR code to know about me</h2>
+        <img src="./img/facebook code.png" alt="qr code" width="100" />
+      </aside>
+    </div>
+  </body>
+</html>
